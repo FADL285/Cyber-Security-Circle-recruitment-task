@@ -176,6 +176,42 @@ a logical filesystem instead. At the very top of the filesystem structure is / (
 - Display information about processes running on the
   machine with **ps**
 
-`ps aux` => list running processes
+  `ps aux` => list running processes
+
+---
+
+# Chapter Two
+
+> This chapter will teach you to manipulate text to find, examine, and alter software and files. <br/> In this chapter, we will use several commands and techniques for manipulating text in Linux.
+
+## Commands
+
+- **Taking the Head :** view the beginning of a file. By default, this command ( `head` ) displays the first 10 lines of a file. <br/>
+  ex:- `head file.txt` <br/>
+  If you want to see more or fewer than the default 10 lines, enter the quantity you want with the dash (-) switch after the call to `head` and before the filename. <br/>
+  ex:- `head -5 file.txt`
+
+- **Grabbing That Tail :** The `tail` command is similar to the `head` command, but it’s used to view the last lines of a file. <br/>
+  ex:- `tail file.txt`
+
+- **Numbering the Lines :** To display a file with line numbers, we use the `nl` (number lines) command. <br/>
+  ex:- `nl file.txt`
+
+- **FILTERING TEXT WITH _GREP_ :** The grep filter searches a file for a particular pattern of characters, and displays all lines that contain that pattern <br/>
+  ex:- `ps aux | grep -i "apache"`
+
+- **USING SED TO FIND AND REPLACE :** The sedcommand lets you search for occurrences of a word or a text pattern and then perform some action on it.
+
+  1. Find a word and replace it with a new one and save the result in a new file <br/>
+     ex:- `sed s/oldWord/newWord/g searchedFileName > newFileName`
+
+  2. Find a word and replace it on the same file <br/>
+     ex:- `sed -i s/oldWord/newWord/g searchFileName`
+
+- **Controlling the Display with _more_ :** The `more` command displays a page of a file at a time and lets you page down through it using the ENTER key. <br/>
+  ex:- `more fileName`
+
+- **Displaying and Filtering with _less_ :** Less is a command line utility that displays the contents of a file or a command output, one page at a time. It is similar to more, but has more advanced features and allows you to navigate both forward and backward through the file. <br/>
+  ex:- `ps aux | less`
 
 ---
