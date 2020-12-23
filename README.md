@@ -6,11 +6,26 @@
 
 ---
 
-## Task #1
+## [Task #1](#task-one)
 
-> Write a summary for first three chapters for [LINUX BASICS FOR HACKERS Book](http://bit.ly/2Kn93MS)
+> Write a summary for first three chapters for [LINUX BASICS FOR HACKERS Book](http://bit.ly/2Kn93MS) 👨🏻‍💻👨🏻‍💻
+
+## [Task #2](#task-two)
+
+> Solve the following problems: <br/>
+[Bear and Big Brother](https://codeforces.com/contest/791/problem/A) <br/>
+[Mishka and Contest](https://codeforces.com/contest/999/problem/A)
 
 ---
+
+
+# Task One
+
+![Book Cover](img/book-cover.png) <br/>
+<p align="center">
+  <b><a href="http://bit.ly/2Kn93MS">LINUX BASICS FOR HACKERS Book</a></b>
+  
+</p>
 
 ## Content:
 
@@ -253,3 +268,10 @@ a logical filesystem instead. At the very top of the filesystem structure is / (
   ex: `sudo nano /etc/hosts` < Then add your own IP address >
 
 ---
+# Task Two
+
+> Can See Solution files in problem directory or open solution links 😀✌️
+## Solution links
+
+[Bear and Big Brother Problem Solution](https://codeforces.com/contest/791/submission/102128480) <br/>
+[Mishka and Contest Problem Solution](https://codeforces.com/contest/999/submission/102131429)
