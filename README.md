@@ -8,7 +8,7 @@
 
 ## Task #1
 
-> Write a summary for first three chapters for [LINUX BASICS FOR HACKERS Book](http://github.com)
+> Write a summary for first three chapters for [LINUX BASICS FOR HACKERS Book](http://bit.ly/2Kn93MS)
 
 ---
 
@@ -182,7 +182,7 @@ a logical filesystem instead. At the very top of the filesystem structure is / (
 
 # Chapter Two
 
-> This chapter will teach you to manipulate text to find, examine, and alter software and files. <br/> In this chapter, we will use several commands and techniques for manipulating text in Linux.
+> This chapter will teach you how to manipulate text to find, examine, and alter software and files. <br/> In this chapter, we will use several commands and techniques for manipulating text in Linux.
 
 ## Commands
 
@@ -213,5 +213,43 @@ a logical filesystem instead. At the very top of the filesystem structure is / (
 
 - **Displaying and Filtering with _less_ :** Less is a command line utility that displays the contents of a file or a command output, one page at a time. It is similar to more, but has more advanced features and allows you to navigate both forward and backward through the file. <br/>
   ex:- `ps aux | less`
+
+---
+
+# Chapter Three
+
+> This chapter will teach you howmanage networks. You’ll scan for networks, find information on connections, and disguise yourself by masking your network and DNS information.
+
+## Commands
+
+- **ANALYZING NETWORKS WITH IFCONFIG :** `ifconfig` stands for "interface configuration." It is used to view and change the configuration of the network interfaces on your system.
+
+  ex: `ifconfig` => displays information about all network interfaces currently in operation
+
+  ex: `sudo ifconfig wlan0 69.72.169.1` => assign a static IP address to an interface, specify the interface name and the IP address
+
+- **CHECKING WIRELESS NETWORK DEVICES WITH IWCONFIG :** `iwconfig` is similar to ifconfig, but is dedicated to the wireless interfaces. It is used to set the parameters of the network interface that are specific to the wireless operation (the wireless frequency, for example). `iwconfig` may also be used to display those parameters, and the wireless statistics
+
+  ex: `iwconfig`
+
+- **Assigning New IP Addresses from the DHCP Server :** The DHCP protocol allows a host to contact a central server which maintains a list of IP addresses which may be assigned on one or more subnets. A DHCP client may request an address from this pool, and then use it on a temporary basis for communication on network. The DHCP protocol also provides a mechanism whereby a client can learn important details about the network to which it is attached, such as the location of a default router, the location of a name server, etc.
+
+  ex: `dhclient eth0`
+
+- **Examining DNS with dig :** The `dig` command in Linux is used to gather DNS information. It stands for Domain Information Groper, and it collects data about Domain Name Servers. The `dig` command is helpful for diagnosing DNS problems, but is also used to display DNS information.
+
+  ex: `dig www.cisco.com`
+
+- **Changing Your DNS Server :** In some cases, you may want to use another DNS server. To do so, you’ll edit a plaintext
+  file named `/etc/resolv.conf` on the system. Open that file in a text editor. Then, on your command line, enter the precise name of your editor followed by the location of the file and the filename.
+
+  ex: `sudo nano /etc/resolv.conf` < Then change name server for google name server change it to `8.8.8.8` & `8.8.4.4` >
+
+- **Mapping Your Own IP Addresses :** A special file on your system called the hosts file also performs domain name–IP
+  address translation. The hosts file is located at `/etc/hosts`, and kind of as with DNS, you
+  can use it to specify your own IP address–domain name mapping. In other words, you
+  can determine which IP address your browser goes to when you enter
+
+  ex: `sudo nano /etc/hosts` < Then add your own IP address >
 
 ---
