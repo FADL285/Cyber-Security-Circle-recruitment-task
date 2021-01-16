@@ -117,7 +117,7 @@ a logical filesystem instead. At the very top of the filesystem structure is / (
 
   `ls` => return the contents of current directory (files and directories)
 
-  we can add **arguments** to `cd` command to see extra information such as `cd -l` this get more information about the files and directories, such as their permissions, owner, size, and when they were last modified.
+  we can add **arguments** to `ls` command to see extra information such as `ls -l` this get more information about the files and directories, such as their permissions, owner, size, and when they were last modified.
 
 - Getting Help: Nearly every command, application, or utility has a dedicated help file in Linux that
   provides guidance for its use.
